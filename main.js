@@ -1,3 +1,4 @@
+import zeroPadding from "./utils/zeroPadding.js";
 import { getCountdown } from "/utils/date.js";
 
 const DATE = new Date("05/11/2024");
@@ -10,7 +11,6 @@ const GIFT_SUGGESTION_MESSAGE =
 
 const $btnConfirmAssistance = document.querySelector("#btn-confirm-assistance");
 const $btnGiftSuggestion = document.querySelector("#btn-gift-suggestion");
-const $txtCountdown = document.querySelector("#txt-countdown");
 
 $btnConfirmAssistance.addEventListener("click", () => {
   window.open(
@@ -28,21 +28,38 @@ $btnGiftSuggestion.addEventListener("click", () => {
   );
 });
 
-$txtCountdown.addEventListener("load", setCountdown);
-
 function setCountdown() {
   const intervalId = setInterval(() => {
     const countdown = getCountdown(DATE);
 
     if (!countdown) {
+      document.getElementById("countdown-container").innerHTML =
+        "El baby shower ya comenzó";
       clearInterval(intervalId);
-      $txtCountdown.innerHTML = "El baby shower ya comenzó";
       return;
     }
 
-    const { days, hours, minutes, seconds } = countdown;
-    $txtCountdown.innerHTML = `${days}:${hours}:${minutes}:${seconds}`;
+    document.getElementById("txt-days").innerHTML = zeroPadding(
+      countdown.days,
+      2
+    );
+    document.getElementById("txt-hours").innerHTML = zeroPadding(
+      countdown.hours,
+      2
+    );
+    document.getElementById("txt-minutes").innerHTML = zeroPadding(
+      countdown.minutes,
+      2
+    );
+    document.getElementById("txt-seconds").innerHTML = zeroPadding(
+      countdown.seconds,
+      2
+    );
   }, 1000);
 }
 
-setCountdown();
+function init() {
+  setCountdown();
+}
+
+document.addEventListener("DOMContentLoaded", init);

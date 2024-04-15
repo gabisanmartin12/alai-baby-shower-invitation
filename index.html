@@ -4,21 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alai 🧚🏼</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header>
+    <header class="h-[50dvh] flex flex-col justify-center items-center gap-4">
       <span>Baby Shower</span>
       <h1>Alai</h1>
-      <span>11/05/2024</span>
+      <span class="">11/05/2024</span>
     </header>
     <main>
-      <section>
-        <p id="txt-countdown" />
+      <section id="countdown-container" class="flex justify-center py-10 bg-pink-300 text-white gap-8">
+        <div class="flex flex-col items-center justify-center gap-4">
+            <p class="text-3xl" id="txt-days">00</p>
+            <span class="font-bold text-xs">D&iacute;as</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+            <p class="text-3xl" id="txt-hours">00</p>
+            <span class="font-bold text-xs">Horas</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+            <p class="text-3xl" id="txt-minutes">00</p>
+            <span class="font-bold text-xs">Minutos</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+            <p class="text-3xl" id="txt-seconds">00</p>
+            <span class="font-bold text-xs">Segundos</span>
+        </div>
       </section>
-      <section>
+
+      <section class="">
         <h2>Ubicacion</h2>
         <p>{incluir google maps}</p>
       </section>
+
       <section>
         <h2>Regalos</h2>
         <p>

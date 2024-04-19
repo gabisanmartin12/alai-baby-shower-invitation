@@ -8,49 +8,76 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="h-[50dvh] flex flex-col justify-center items-center gap-4">
+    <header
+      class="h-[50dvh] flex flex-col justify-center items-center gap-4 bg-white/50 relative"
+    >
+      <div class="absolute w-[100%]" />
       <span>Baby Shower</span>
-      <h1>Alai</h1>
+      <h1 class="text-pink-300 text-8xl">Alai</h1>
       <span class="">11/05/2024</span>
     </header>
     <main>
-      <section id="countdown-container" class="flex justify-center py-10 bg-pink-300 text-white gap-8">
-        <div class="flex flex-col items-center justify-center gap-4">
-            <p class="text-3xl" id="txt-days">00</p>
-            <span class="font-bold text-xs">D&iacute;as</span>
+      <section
+        id="countdown-container"
+        class="flex justify-center py-10 px-4 bg-pink-300 text-white gap-10"
+      >
+        <div
+          class="flex flex-col items-center justify-center gap-4"
+        >
+          <p class="text-3xl" id="txt-days">00</p>
+          <span class="font-bold text-xs">D&iacute;as</span>
         </div>
-        <div class="flex flex-col items-center justify-center gap-4">
-            <p class="text-3xl" id="txt-hours">00</p>
-            <span class="font-bold text-xs">Horas</span>
+        <div
+          class="flex flex-col items-center justify-center gap-4"
+        >
+          <p class="text-3xl" id="txt-hours">00</p>
+          <span class="font-bold text-xs">Horas</span>
         </div>
-        <div class="flex flex-col items-center justify-center gap-4">
-            <p class="text-3xl" id="txt-minutes">00</p>
-            <span class="font-bold text-xs">Minutos</span>
+        <div
+          class="flex flex-col items-center justify-center gap-4"
+        >
+          <p class="text-3xl" id="txt-minutes">00</p>
+          <span class="font-bold text-xs">Min</span>
         </div>
-        <div class="flex flex-col items-center justify-center gap-4">
-            <p class="text-3xl" id="txt-seconds">00</p>
-            <span class="font-bold text-xs">Segundos</span>
+        <div
+          class="flex flex-col items-center justify-center gap-4"
+        >
+          <p class="text-3xl" id="txt-seconds">00</p>
+          <span class="font-bold text-xs">Seg</span>
         </div>
       </section>
 
-      <section class="">
+      <section class="min-h-[25dvh] py-8 px-4">
         <h2>Ubicacion</h2>
-        <p>{incluir google maps}</p>
       </section>
 
-      <section class="flex flex-col justify-center items-center gap-8 py-12 bg-pink-300">
+      <section
+        class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] bg-pink-300 py-8 px-4"
+      >
         <h2 class="text-white text-3xl font-bold">Regalos</h2>
-        <p class="text-center text-white italic max-w-[480px] px-4 box-content" >
+        <p class="text-center text-white italic max-w-[480px] px-4 box-content">
           ¿Te preguntas qué regalar para dar la bienvenida a Alai? ¡No dudes en
           enviarnos un mensaje a nuestro WhatsApp para obtener algunas ideas
           geniales y asegurarte de elegir el regalo perfecto!
         </p>
-        <button class="rounded-lg border-2 border-white py-2 px-4 text-white hover:bg-pink-400 transition-colors duration-300" id="btn-gift-suggestion">Consultanos</button>
+        <button
+          class="rounded-lg border-2 border-white py-2 px-4 text-white hover:bg-pink-400 transition-colors duration-300"
+          id="btn-gift-suggestion"
+        >
+          Consultanos
+        </button>
       </section>
 
-      <section class="flex flex-col justify-center items-center gap-8 py-12">
+      <section
+        class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] py-8 px-4"
+      >
         <h2 class="text-pink-300 text-3xl font-bold">Confirmar asistencia</h2>
-        <button class="rounded-lg bg-pink-300 py-2 px-4 text-white hover:bg-pink-400 transition-colors duration-300" id="btn-confirm-assistance">Confirmar</button>
+        <button
+          class="rounded-lg bg-pink-300 py-2 px-4 text-white hover:bg-pink-400 transition-colors duration-300"
+          id="btn-confirm-assistance"
+        >
+          Confirmar
+        </button>
       </section>
     </main>
     <script src="/main.js" type="module"></script>

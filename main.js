@@ -5,9 +5,9 @@ const DATE = new Date("05/11/2024");
 
 const ORNE_PHONE_NUMBER = "543425179066";
 const CONFIRM_ASSISTANCE_MESSAGE =
-  "¡Hola! ¡Me encantaría asistir al baby shower de Alai! Estoy practicando ya mi técnica de cambio de pañales. ¡Nos vemos pronto!";
+  "¡Hola! ¡Gracias por la invitación! Estoy muy emocionado/a de poder asistir al baby shower de Alai. ¡Nos vemos allí!";
 const GIFT_SUGGESTION_MESSAGE =
-  "¡Hola a todos! Estoy buscando el regalo perfecto para Alai y me encantaría escuchar sus sugerencias. ¿Qué creen que sería más útil o especial para la llegada de nuestra pequeña mariposa?";
+  "¡Hola! ¿Alguien tiene alguna sugerencia para el regalo perfecto para Alai? ¡Estoy abierto/a a cualquier idea o consejo que puedan ofrecerme!";
 
 const $btnConfirmAssistance = document.querySelector("#btn-confirm-assistance");
 const $btnGiftSuggestion = document.querySelector("#btn-gift-suggestion");

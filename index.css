@@ -9,3 +9,19 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
 }
+
+.bg-pinky {
+  background-color: #f99aaa;
+}
+
+.text-pinky {
+  color: #f99aaa;
+}
+
+.border-pinky {
+  border-color: #f99aaa;
+}
+
+.text-gold {
+  color: #a87b05;
+}

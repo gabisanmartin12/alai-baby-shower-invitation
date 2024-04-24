@@ -1,5 +1,5 @@
 import { getCountdown } from "./utils/date.js";
-import zeroPadding from "./utils/zeroPadding.js";
+import { zeroPadding } from "./utils/zeroPadding.js";
 
 const DATE = new Date("05/11/2024");
 

@@ -1,4 +1,4 @@
-export default (value, digits) => {
+export const zeroPadding = (value, digits) => {
   const stringValue = value.toString();
   if (stringValue.length >= digits) return stringValue;
 

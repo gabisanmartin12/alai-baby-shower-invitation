@@ -1,174 +1,266 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Invitation para el baby shower de Alai" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="description" content="Invitation para el baby shower de Alai" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alai 🎀</title>
 
-  <title>Alai 🎀</title>
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Te invitamos al baby shower de Alai"
+    />
+    <meta property="og:title" content="Alai 🎀" />
+    <meta
+      property="og:url"
+      content="https://gabisanmartin12.github.io/alai-baby-shower-invitation/"
+    />
 
-  <meta property="og:description" content="Te invitamos al baby shower de Alai" />
-  <meta property="og:title" content="Alai 🎀" />
-  <meta property="og:url" content="https://gabisanmartin12.github.io/alai-baby-shower-invitation/" />
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://gabisanmartin12.github.io/alai-baby-shower-invitation/images/anto-jorge-cover-small.webp"
+    />
+    <meta property="og:image:type" content="image/webp" />
 
-  <meta property="og:image" itemprop="image"
-    content="https://gabisanmartin12.github.io/alai-baby-shower-invitation/images/anto-jorge-cover-small.webp" />
-  <meta property="og:image:type" content="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Quicksand:wght@300..700&display=swap"
-    rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./index.css" />
-</head>
+  <body>
+    <header
+      class="h-[60dvh] landscape:max-[900px]:h-[100vh] bg-[url('./images/jorge-anto-12.webp')] bg-cover bg-center bg-black bg-blend-luminosity"
+    >
+      <p class="uppercase text-white italic text-center">
+        Una pequeña
+        <b class="text-4xl text-pinky font-dancing lowercase">mariposa</b> esta
+        por llegar
+      </p>
 
-<body>
-  <header class="h-[60dvh] landscape:max-[900px]:h-[100vh] bg-[url('./images/jorge-anto-12.webp')]  bg-cover bg-center bg-black bg-blend-luminosity">
-    <p class="uppercase text-white italic text-center">
-      Una pequeña
-      <b class="text-4xl text-pinky font-dancing lowercase">mariposa</b> esta
-      por llegar
-    </p>
-
-    <div class="flex m-auto flex-col items-end max-w-[1200px] px-8 py-12">
-      <span class="text-gold uppercase tracking-widest max-sm:text-sm">Baby Shower</span>
-      <h1 class="text-pinky font-bold text-9xl font-dancing my-4 max-sm:text-7xl">
-        Alai
-      </h1>
-      <span class="text-gold uppercase tracking-widest max-sm:text-sm">11. 05. 24.</span>
-    </div>
-  </header>
-
-  <main>
-    <section id="countdown-container" class="flex justify-center py-10 px-4 bg-pinky text-white gap-10">
-      <div class="flex flex-col items-center justify-center gap-4">
-        <p class="text-3xl" id="txt-days">00</p>
-        <span class="uppercase text-xs tracking-widest">D&iacute;as</span>
+      <div class="flex m-auto flex-col items-end max-w-[1200px] px-8 py-12">
+        <span class="text-gold uppercase tracking-widest max-sm:text-sm"
+          >Baby Shower</span
+        >
+        <h1
+          class="text-pinky font-bold text-9xl font-dancing my-4 max-sm:text-7xl"
+        >
+          Alai
+        </h1>
+        <span class="text-gold uppercase tracking-widest max-sm:text-sm"
+          >11. 05. 24.</span
+        >
       </div>
-      <div class="flex flex-col items-center justify-center gap-4">
-        <p class="text-3xl" id="txt-hours">00</p>
-        <span class="uppercase text-xs tracking-widest">Horas</span>
-      </div>
-      <div class="flex flex-col items-center justify-center gap-4">
-        <p class="text-3xl" id="txt-minutes">00</p>
-        <span class="uppercase text-xs tracking-widest">Min</span>
-      </div>
-      <div class="flex flex-col items-center justify-center gap-4">
-        <p class="text-3xl" id="txt-seconds">00</p>
-        <span class="uppercase text-xs tracking-widest">Seg</span>
-      </div>
-    </section>
+    </header>
 
-    <section class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] py-8 px-4">
-      <header>
-        <img loading="lazy" alt="Mariposa" class="rounded-lg h-20 w-20 m-auto" src="./images/mariposa.png" />
-        <h2 class="text-pinky text-4xl font-bold font-dancing">
-          Celebraci&oacute;n
-        </h2>
-      </header>
+    <main>
+      <section
+        id="countdown-container"
+        class="flex justify-center py-10 px-4 bg-pinky text-white gap-10"
+      >
+        <div class="flex flex-col items-center justify-center gap-4">
+          <p class="text-3xl" id="txt-days">00</p>
+          <span class="uppercase text-xs tracking-widest">D&iacute;as</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+          <p class="text-3xl" id="txt-hours">00</p>
+          <span class="uppercase text-xs tracking-widest">Horas</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+          <p class="text-3xl" id="txt-minutes">00</p>
+          <span class="uppercase text-xs tracking-widest">Min</span>
+        </div>
+        <div class="flex flex-col items-center justify-center gap-4">
+          <p class="text-3xl" id="txt-seconds">00</p>
+          <span class="uppercase text-xs tracking-widest">Seg</span>
+        </div>
+      </section>
 
-      <main class="max-w-[480px] px-4 box-content">
-        <p class="text-center text-pinky">
-          <span class="text-gold">
-            Te esperamos para compartir un almuerzo todos juntos a partir de las
-            <b>12:00 hs</b>.
-          </span>
-          <br />
-          <br />
-          Para que todos podamos disfrutar de una variedad de sabores y
-          opciones, les pedimos amablemente que cada uno contribuya trayendo un
-          plato de comida para compartir.
-          <br />
-          <br />
-          <span class="text-gold">
-            Además, cada uno es bienvenido a traer su bebida preferida para
-            disfrutar durante la reunión.
-          </span>
-        </p>
-      </main>
+      <section
+        class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] py-8 px-4"
+      >
+        <header>
+          <img
+            loading="lazy"
+            alt="Mariposa"
+            class="rounded-lg h-20 w-20 m-auto"
+            src="./images/mariposa.png"
+          />
+          <h2 class="text-pinky text-4xl font-bold font-dancing">
+            Celebraci&oacute;n
+          </h2>
+        </header>
 
-      <a class="rounded-lg bg-white py-2 px-4 border-2 border-pinky text-pinky hover:opacity-50 transition-opacity duration-300"
-        href="https://maps.app.goo.gl/2Gdf2yVGAMPDyEef6?g_st=ic" target="_blank">
-        Ver ubicacion
-      </a>
-    </section>
+        <main class="max-w-[480px] px-4 box-content">
+          <p class="text-center text-pinky">
+            <span class="text-gold">
+              Te esperamos para compartir un almuerzo todos juntos a partir de
+              las
+              <b>12:00 hs</b>.
+            </span>
+            <br />
+            <br />
+            Para que todos podamos disfrutar de una variedad de sabores y
+            opciones, les pedimos amablemente que cada uno contribuya trayendo
+            un plato de comida para compartir.
+            <br />
+            <br />
+            <span class="text-gold">
+              Además, cada uno es bienvenido a traer su bebida preferida para
+              disfrutar durante la reunión.
+            </span>
+            <br />
+            <br />
+            <span>
+              <b>Importante!</b> En caso de lluvia u otras condiciones climáticas
+              adversas, el evento se pospondrá para el <b>Domingo 12/05</b> en el mismo
+              horario y en la siguiente ubicación: <b>Balcarce 1356</b>.
+            </span>
 
-    <section class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] bg-pinky py-8 px-4">
-      <header>
-        <h2 class="text-white text-4xl font-bold font-dancing">Regalos</h2>
-      </header>
+            <br/>
+            <br/>
 
-      <main>
-        <p class="text-center text-white italic max-w-[480px] px-4 box-content">
-          "¿Buscas orientación sobre qué regalarle a Alai? ¡Envíanos un mensaje
-          a nuestro WhatsApp y estaremos encantados de ayudarte a encontrar el
-          regalo perfecto para este momento especial!"
-        </p>
-      </main>
+            <span>
+              Pero no te preocupes que en caso de cambio te vamos a estar avisando! Gracias por tu comprensión 💖
+            </span>
+          </p>
+        </main>
 
-      <button
-        class="rounded-lg border-2 border-white py-2 px-4 text-white hover:opacity-50 transition-opacity duration-300"
-        id="btn-gift-suggestion">
-        Consultanos
-      </button>
-    </section>
+        <a
+          class="rounded-lg bg-white py-2 px-4 border-2 border-pinky text-pinky hover:opacity-50 transition-opacity duration-300"
+          href="https://maps.app.goo.gl/2Gdf2yVGAMPDyEef6?g_st=ic"
+          target="_blank"
+        >
+          Ver ubicacion
+        </a>
+      </section>
 
-    <section class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] py-8 px-4">
-      <header>
-        <img loading="lazy" alt="Mariposa" class="rounded-lg h-20 w-20 m-auto" src="./images/mariposa.png" />
-        <h2 class="text-pinky text-4xl font-bold font-dancing">
-          Confirmar asistencia
-        </h2>
-      </header>
+      <section
+        class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] bg-pinky py-8 px-4"
+      >
+        <header>
+          <h2 class="text-white text-4xl font-bold font-dancing">Regalos</h2>
+        </header>
 
-      <button class="rounded-lg bg-pinky py-2 px-4 text-white hover:opacity-50 transition-opacity duration-300"
-        id="btn-confirm-assistance">
-        Confirmar
-      </button>
-    </section>
+        <main>
+          <p
+            class="text-center text-white italic max-w-[480px] px-4 box-content"
+          >
+            "¿Buscas orientación sobre qué regalarle a Alai? ¡Envíanos un
+            mensaje a nuestro WhatsApp y estaremos encantados de ayudarte a
+            encontrar el regalo perfecto para este momento especial!"
+          </p>
+        </main>
 
-    <section class="m-auto bg-pinky min-h-[25dvh] py-8 px-4">
-      <header>
-        <h2 class="text-center text-white text-4xl font-bold font-dancing">
-          Galer&iacute;a
-        </h2>
-      </header>
+        <button
+          class="rounded-lg border-2 border-white py-2 px-4 text-white hover:opacity-50 transition-opacity duration-300"
+          id="btn-gift-suggestion"
+        >
+          Consultanos
+        </button>
+      </section>
 
-      <main class="max-w-[1200px] m-auto mt-4 grid gap-4 max-sm:gap-2 grid-cols-6">
-        <img loading="lazy" alt="Rostro de Alai" class="rounded-lg object-cover aspect-square col-span-2"
-          src="./images/alai-2.webp" />
+      <section
+        class="flex flex-col justify-center items-center gap-8 min-h-[25dvh] py-8 px-4"
+      >
+        <header>
+          <img
+            loading="lazy"
+            alt="Mariposa"
+            class="rounded-lg h-20 w-20 m-auto"
+            src="./images/mariposa.png"
+          />
+          <h2 class="text-pinky text-4xl font-bold font-dancing">
+            Confirmar asistencia
+          </h2>
+        </header>
 
-        <img loading="lazy" alt="Ecografía" class="rounded-lg object-cover aspect-square col-span-2"
-          src="./images/alai-4.webp" />
+        <button
+          class="rounded-lg bg-pinky py-2 px-4 text-white hover:opacity-50 transition-opacity duration-300"
+          id="btn-confirm-assistance"
+        >
+          Confirmar
+        </button>
+      </section>
 
-        <img loading="lazy" alt="Rostro de Alai" class="rounded-lg object-cover aspect-square col-span-2"
-          src="./images/alai-3.webp" />
+      <section class="m-auto bg-pinky min-h-[25dvh] py-8 px-4">
+        <header>
+          <h2 class="text-center text-white text-4xl font-bold font-dancing">
+            Galer&iacute;a
+          </h2>
+        </header>
 
-        <img loading="lazy" alt="Jorge y Anto" class="rounded-lg object-cover col-span-3"
-          src="./images/jorge-anto-6.webp" />
+        <main
+          class="max-w-[1200px] m-auto mt-4 grid gap-4 max-sm:gap-2 grid-cols-6"
+        >
+          <img
+            loading="lazy"
+            alt="Rostro de Alai"
+            class="rounded-lg object-cover aspect-square col-span-2"
+            src="./images/alai-2.webp"
+          />
 
-        <img loading="lazy" alt="Jorge y Anto" class="rounded-lg object-cover col-span-3"
-          src="./images/jorge-anto-10.webp" />
+          <img
+            loading="lazy"
+            alt="Ecografía"
+            class="rounded-lg object-cover aspect-square col-span-2"
+            src="./images/alai-4.webp"
+          />
 
+          <img
+            loading="lazy"
+            alt="Rostro de Alai"
+            class="rounded-lg object-cover aspect-square col-span-2"
+            src="./images/alai-3.webp"
+          />
 
-        <img loading="lazy" alt="Jorge y Anto" class="rounded-lg col-span-full" src="./images/jorge-anto-3.webp" />
-      </main>
-    </section>
-  </main>
-  <script src="./main.js" type="module"></script>
-  <link itemprop="thumbnailUrl"
-    href="https://gabisanmartin12.github.io/alai-baby-shower-invitation/images/anto-jorge-cover-small.webp">
+          <img
+            loading="lazy"
+            alt="Jorge y Anto"
+            class="rounded-lg object-cover col-span-3"
+            src="./images/jorge-anto-6.webp"
+          />
 
-  <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject">
-    <link itemprop="url"
-      href="https://gabisanmartin12.github.io/alai-baby-shower-invitation/images/anto-jorge-cover-small.webp">
-  </span>
-</body>
+          <img
+            loading="lazy"
+            alt="Jorge y Anto"
+            class="rounded-lg object-cover col-span-3"
+            src="./images/jorge-anto-10.webp"
+          />
 
+          <img
+            loading="lazy"
+            alt="Jorge y Anto"
+            class="rounded-lg col-span-full"
+            src="./images/jorge-anto-3.webp"
+          />
+        </main>
+      </section>
+    </main>
+    <script src="./main.js" type="module"></script>
+    <link
+      itemprop="thumbnailUrl"
+      href="https://gabisanmartin12.github.io/alai-baby-shower-invitation/images/anto-jorge-cover-small.webp"
+    />
+
+    <span
+      itemprop="thumbnail"
+      itemscope
+      itemtype="http://schema.org/ImageObject"
+    >
+      <link
+        itemprop="url"
+        href="https://gabisanmartin12.github.io/alai-baby-shower-invitation/images/anto-jorge-cover-small.webp"
+      />
+    </span>
+  </body>
 </html>
